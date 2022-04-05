@@ -31,3 +31,20 @@
     text-align: center;
     padding: 10px 0px;
 }
+body{
+    background-color:aquamarine;
+}
+div{
+    color: black;
+    background-color: burlywood;
+    width: 60px;
+    height: 80px
+  
+   
+}
+.titulo{
+    color: brown;
+}
+p{
+    color: black;
+}
