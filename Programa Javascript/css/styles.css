@@ -1,0 +1,251 @@
+.contenedor-titulo{
+    width: 1400px;
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+    background:url(../imagenes/fondo.jpg)
+    
+    
+}
+.animacion{
+    background: repeating-linear-gradient(green,white,green, white,green);
+    height: 100px;
+    width: 100px;
+    transform: skew(20deg);
+    animation: skew 10s infinite;
+
+}
+@keyframes skew{
+    0%{
+        transform: skew(20deg,20deg);
+    }
+    25%{
+        transform: skew(-20deg,-20deg);
+    }
+    50%{
+        transform: skew(30deg,30deg);
+    }
+    75%{
+        transform: skew(-30deg,-30deg);
+    }
+}
+
+.fondo-titulo{
+    background-color: black;
+    width: 220px;
+    height: 100px;
+    text-align: center;
+   position: relative;
+   left: 560px;
+   top: 150px;
+   box-shadow: 7px 13px 20px white;
+
+}
+.legumbreria{
+    color: white;
+   transition: 10s;
+
+}
+.legumbreria:hover{
+    transform:rotateY(180deg)
+}
+.caja{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.contenedor-huevos{
+    background-color: white;
+    box-shadow: 0 0 10px 10px black;
+    width: 500px;
+    height: 500px;
+}
+.imagen-huevo{
+   
+    background-repeat: no-repeat;
+  
+    width: 400px;
+    height: 350px;
+    background-size: contain;
+    position: relative;
+    left: 30px;
+    
+    animation: siu 10s infinite;
+}
+@keyframes siu{
+    0%,30%{
+       background-image: url(../imagenes/huevos1.jpg);
+    }
+    35%,50%{
+        background-image: url(../imagenes/huevos2.jpg);
+    }
+    55%,70%{
+        background-image: url(../imagenes/huevos3.webp);
+    }
+    75%,100%{
+        background-image: url(../imagenes/huevos4.jpg);
+    }
+}
+.cantidad-huevos{
+    padding: 6px;
+    position: relative;
+    left: 150px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+}
+.contenedores{
+    display: flex;
+    justify-content: space-between;
+}
+/* --------------------------------------------------------------------------------- */
+.contenedor-leche{
+    background-color: white;
+    box-shadow: 0 0 10px 10px black;
+    width: 500px;
+    height: 500px;
+}
+.imagen-leche{
+    background-repeat: no-repeat;
+  
+    width: 400px;
+    height: 350px;
+    background-size: contain;
+    position: relative;
+    left: 30px;
+    
+    animation: leche 10s infinite;
+}
+@keyframes leche{
+    0%,30%{
+        background-image: url(../imagenes/leche1.jpg);
+    }
+    35%,50%{
+        background-image: url(../imagenes/leche2.jpg);
+    }
+    55%,70%{
+        background-image: url(../imagenes/leche3.jpg);
+
+    }
+    75%,100%{
+        background-image: url(../imagenes/leche4.webp);
+    }
+}
+.cantidad-leche{
+    padding: 6px;
+    position: relative;
+    left: 150px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+}
+/* ------------------------------------------------------------------------------------------ */
+.contenedoresDos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+
+.contenedor-pan{
+    background-color: black;
+    box-shadow: 0 0 10px 10px white;
+    width: 500px;
+    height: 500px;
+    color: white;
+}
+.imagen-pan{
+    background-repeat: no-repeat;
+  
+    width: 400px;
+    height: 350px;
+    background-size: contain;
+    position: relative;
+    left: 30px;
+    
+    animation: pan 10s infinite;
+}
+@keyframes pan{
+    0%,30%{
+        background-image: url(../imagenes/pan1.jpg);
+    }
+    35%,50%{
+        background-image: url(../imagenes/pan2.jpg);
+    }
+    55%,70%{
+        background-image: url(../imagenes/pan3.jpeg);
+    }
+    75%,100%{
+        background-image: url(../imagenes/pan4.jpg);
+    }
+}
+
+.cantidad-pan{
+    padding: 6px;
+    position: relative;
+    left: 150px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+}
+/* --------------------------------------------------------------------- */
+.contenedor-fruta{
+    background-color: black;
+    box-shadow: 0 0 10px 10px white;
+    width: 500px;
+    height: 500px;
+    color: white;
+}
+.imagen-fruta{
+    background-repeat: no-repeat;
+
+    width: 400px;
+    height: 350px;
+    background-size: contain;
+    position: relative;
+    left: 30px;
+    
+    animation: fruta 10s infinite;
+}
+@keyframes fruta{
+    0%,30%{
+        background-image: url(../imagenes/frutas1.jpg);
+    }
+    35%,50%{
+        background-image: url(../imagenes/frutas2.webp);
+    }
+    55%,70%{
+        background-image: url(../imagenes/frutas3.jpg);
+    }
+    75%,100%{
+        background-image: url(../imagenes/frutas4.jpeg);
+    }
+}
+.cantidad-fruta{
+    padding: 6px;
+    position: relative;
+    left: 150px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+}
+.separador{
+    background:repeating-linear-gradient(blue,black,white,blue,black,white);
+    box-shadow: 7px 10px 20px black;
+    width: 5px;
+    height: 1050px;
+    margin-left: 670px;
+    position: relative;
+    bottom: 1050px;
+}
+.boton{
+   position: relative;
+   bottom: 1000px;
+}
+
+.carrito{
+    position: relative;
+    bottom: 1000px;
+    left: 1000px;
+}
