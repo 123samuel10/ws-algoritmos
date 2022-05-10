@@ -1,28 +1,72 @@
+
+let arregloEstu=[];
+let arregloNotas=[];
+
+
 function boton(){
  let nombre=document.getElementById('texto').value;
-    console.log(nombre);
+    alert('El estudiante es:'+nombre);
+    arregloEstu.push(nombre);
+
+  
+  
+
+
 };
 
 function botonD(){
     let notas=document.getElementById('numero').value;
-    console.log(notas);
-
-    
-}
-
-function botonR(){
-    let resultado=document.getElementById('boton-result').value;
-    let nombre=document.getElementById('texto').value;
-    let notas=document.getElementById('numero').value;
-
-    console.log( 'La nota de '+' '+nombre+' '+'es:' +' '+ notas);
+    notas=parseInt(notas);
+    arregloNotas.push(notas);
  
+
+   
+}
+//promedio
+function botonR(){
+ let promedio=0;
+ let total=0;
+
+ for(let i of arregloNotas){
+     total=total+i;
+
+     
+ }
+ promedio=total/arregloNotas.length;
+
+ alert('El promedio total es:'+promedio);
+
+   
+    
   
 }
+// ----------------------------------------------------------------------------------------------------
+//nota mayor del estudiante
 function total(){
-    let resultado=document.getElementById('boton-result').value;
-    let nombre=document.getElementById('texto').value;
-    let notas=document.getElementById('numero').value;
-    alert('los estudiantes '+nombre+'tienen una nota de: '+ notas);
-    
-}
+let notaMayor=0;
+let estudents=[];
+  
+  for(let i in arregloNotas){
+
+        if(arregloNotas[i]>notaMayor){
+            notaMayor=arregloNotas[i];
+
+        }
+
+   }
+   for(let i in arregloEstu){
+       if(arregloNotas[i]==notaMayor){
+           estudents.push(arregloEstu[i]);
+       }
+
+   }
+   console.log(notaMayor);
+   alert(`la nota mayor fue de: ${notaMayor}, del estudiante ${estudents}`);
+  }
+
+
+
+
+
+
+

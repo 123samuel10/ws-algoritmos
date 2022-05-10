@@ -20,7 +20,7 @@
 
 #numero,#notas{
     position: relative;
-    left: 70%;
+    left: 60%;
     margin-top: 40px;
 }
 #numero{
@@ -32,17 +32,23 @@
 }
 #notas{
     padding: 3px;
+    position: relative;
+   
 }
 
 .click{
     position: relative;
-    top: 40px;
-    width: 100%;
+    top: 300px;
+    right: 500px;
     padding: 6px
 }
 
 .total{
     margin-top: 50px;
+    position: relative;
+    top: 250px;
+    padding: 6px;
+    right: 570px;
 }
 
 .paginas{

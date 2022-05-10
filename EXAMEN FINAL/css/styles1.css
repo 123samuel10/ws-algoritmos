@@ -19,8 +19,11 @@ body{
     text-align: center;
     width: 400px;
     position: relative;
-    left: 40%;
+    left: 35%;
     margin-top: 400px;
+    border-radius: 5px;
+    text-shadow: -3px 0 0 rgb(236, 190, 89);
+
 
 
 
@@ -31,6 +34,9 @@ body{
     margin-top: 400px;
     background-color: black;
     display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgb(7, 7, 8)
 }
 .paginas a{
     color: white;
@@ -51,7 +57,9 @@ body{
 }
 .botonop{
     position: relative;
-    bottom: 350px;
-    left: 48%;
+    bottom: 450px;
+    left: 40%;
+    width: 20%;
     padding: 9px;
+
 }
