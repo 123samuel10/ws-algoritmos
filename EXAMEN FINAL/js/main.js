@@ -41,7 +41,8 @@ function botonR(){
   
 }
 // ----------------------------------------------------------------------------------------------------
-//nota mayor del estudiante
+//nota mayor del estudiante y el estudiante que la obtuvo
+
 function total(){
 let notaMayor=0;
 let estudents=[];
