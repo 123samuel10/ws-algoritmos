@@ -5,8 +5,9 @@
     background-position: center;
     background:url(../imagenes/fondo.jpg)
     
-    
+
 }
+/* comentario  */
 .animacion{
     background: repeating-linear-gradient(green,white,green, white,green);
     height: 100px;
