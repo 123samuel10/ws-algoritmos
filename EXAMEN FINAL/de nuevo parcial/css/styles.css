@@ -1,0 +1,170 @@
+
+
+.titulo{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 20px;
+    text-shadow: -3px 0 0 black;
+    font-size: 50px;
+    border-radius: 5px;
+    border-color: darkblue;
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+}
+.caja1{
+    background-color: black;
+    width: 23px;
+    height: 23px;
+    border-style: solid;
+    transform: skew(20deg);
+    animation: siu 10s infinite;
+    
+
+}
+@keyframes siu{
+    0%{
+        transform:translateX(1000px)
+      
+    }
+ 
+    
+}
+
+
+
+
+.caja2{
+    background-color: darkslategrey;
+    width: 23px;
+    height: 23px;
+    border-style: solid;
+    border-width: 2px;
+    position:absolute;
+    right: 30px;
+    top: 120px;
+    transform: skew(20deg);
+    animation: sizas 10s infinite;
+}
+@keyframes sizas{
+    0%{
+        transform: translateX(-1000px);
+    }
+}
+
+#estudiante{
+    padding: 40px;
+    width: 200px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: darkblue;
+    box-shadow: 7px 10px 23px  black;
+    animation: color 5s infinite;
+
+   
+}
+@keyframes color{
+    0%{
+        border-color: darkcyan;
+        border-style: solid;
+        border-width: 6px;
+    }
+    30%{
+        border-color: blue;
+        border-style: solid;
+        border-width: 6px;
+    }
+    60%{
+        border-color: darkslategrey;
+        border-style: solid;
+        border-width: 6px;
+    }
+    100%{
+        border-color: dodgerblue;
+        border-style: solid;
+        border-width: 6px;
+    }
+}
+#boton-estudiante{
+    padding: 10px;
+    position: relative;
+    top: 100px;
+    right: 200px;
+    background-color: cornflowerblue;
+    color: wheat;
+   
+}
+
+
+
+#nota{
+    padding: 40px;
+    width: 200px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: darkblue;
+    box-shadow: 7px 10px 23px  black;
+    position: relative;
+    animation: nota 4s infinite;
+    left: 45%
+    
+
+}
+@keyframes nota{
+    0%{
+        border-color: darkcyan;
+        border-style: solid;
+        border-width: 6px;
+    }
+    30%{
+        border-color: blue;
+        border-style: solid;
+        border-width: 6px;
+    }
+    60%{
+        border-color: darkslategrey;
+        border-style: solid;
+        border-width: 6px;
+    }
+    100%{
+        border-color: dodgerblue;
+        border-style: solid;
+        border-width: 6px;
+    }
+}
+
+
+#boton-nota{
+    padding: 10px;
+    position: relative;
+    top: 100px;
+    right: 200px;
+    background-color: cornflowerblue;
+    color: wheat;
+    position: relative;
+    left: 31%;
+}
+
+#promedio{
+    padding: 50px;
+    position: relative;
+    top:300px;
+    
+}
+#promedio:hover{
+   color: black;
+   background-color: coral;
+   box-shadow: 0 0 10px 10px black;
+}
+
+#notamayor{
+    padding: 50px;
+    position: relative;
+    top:300px;
+    right:550px;
+}
+#notamayor:hover{
+    color: black;
+    background-color: coral;
+    box-shadow: 0 0 10px 10px black;
+}
