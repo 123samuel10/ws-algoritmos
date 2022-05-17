@@ -14,7 +14,7 @@ function Bnota(){
     arregloNotas.push(nota)
 }
 
-//promedio
+//promedio//
 function bopromedio(){
     let promedio=0;
     let suma=0;
