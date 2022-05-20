@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src='main.js'></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+
+    <center><h1 class="titulo">Tienda La Bonanza</h1></center>
+
+    <div class="separador"> 
+<div class="decoracion">
+    <div class="imagenes"></div>
+    <div class="imagenes2"></div>
+</div>
+    </div>
+  
+    <div class="trabajo">
+    <br>
+    <br>
+    <label for="nombre">Nombre: </label>
+    <input id="nombre" type="text" placeholder="ingrese el nombre del producto">
+    <br>
+    <br>
+    <label for="categoria">Categoria:</label>
+    <select id="categoria" >
+        <option>Frutas</option> 
+        <option>Verduras</option>
+    </select>
+    <br>
+    <br>
+    <label for="precio">Precio: </label>
+    <input id="precio" type="text" placeholder="ingrese el precio"  >
+    <br>
+    <br>
+    <label for="cantidad">Cantidad: </label>
+    <input id="cantidad" type="number" placeholder="ingrese la cantidad " >
+    <br>
+    <br>
+    <button class="cuadro" type="button" onclick="agregarInicio()">Agregar al inicio</button>
+    <button class="cuadro" type="button" onclick="agregarFinal()">Agregar al final</button>
+    <button class="cuadro" type="button" onclick="listarAlfabetico()">Listar en orden alfabético</button>
+    <br>
+    <br>
+    <label for="listado">Productos: </label>
+    <br>
+    <textarea id="listado" rows="10" cols="70" readonly></textarea>
+    <br>
+    <br>
+    <h4>Buscar producto por nombre: </h4>
+    <label for="nombreProducto">Nombre: </label>
+    <input id="nombreProducto" type="text">
+    <button class="cuadro2" type="button" onclick="buscarProducto()">Buscar Producto</button>
+    <br>
+    <br>
+    <textarea id="productoBuscado" rows="1" cols="70" readonly></textarea>
+    <br>
+    <br>
+    <h4>Eliminar producto por nombre: </h4>
+    <label for="nombreProductoEliminar">Nombre: </label>
+    <input id="nombreProductoEliminar" type="text">
+    <button class="cuadro2" type="button" onclick="eliminarProducto()">Eliminar Producto</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4>Agregar cantidad producto por nombre: </h4>
+    <label for="nombreProductoAgregar">Nombre: </label>
+    <input id="nombreProductoAgregar" type="text">
+    <button class="cuadro2" type="button" onclick="agregarCantidad()">Agregar Cantidad Producto</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4>Disminuir cantidad producto por nombre: </h4>
+    <label for="nombreProductoDisminuir">Nombre: </label>
+    <input id="nombreProductoDisminuir" type="text">
+    <button class="cuadro2" type="button" onclick="disminuirCantidad()">Disminuir Cantidad Producto</button>
+    <br>
+    <br>
+    <h4>Total Productos por Categoría</h4>
+    <label for="categoriaProductosTotal">Categoria:</label>
+    <select id="categoriaProductosTotal" onchange="contarCategoria()">
+        <option>Seleccione</option> 
+        <option>Frutas</option> 
+        <option>Verduras</option>
+    </select>
+    <label for="totalProductosCategoria">Total: </label>
+    <input id="totalProductosCategoria" type="number">
+    <br>
+    <br>
+    <h4>Total Productos: </h4>
+    <label for="totalProductos">Total: </label>
+    <input id="totalProductos" type="number">
+    <br>
+    <br>
+    <h4>Valor Total Productos: </h4>
+    <label for="valorTotalProductos">Total: </label>
+    <input id="valorTotalProductos" type="number">
+    <br>
+    <br>
+
+</div>
+
+</body>
+</html>
