@@ -167,3 +167,27 @@ function enviarreducion(){
     })
     alert(`El total del numero cantidades es ${resultado2}`)
 }
+// -------------------------------------------------------------
+
+
+function text()
+{
+    try
+    {
+        var num=Number(prompt("digite su edad "))  ;
+        var num2=Number( prompt("digite su numero favorito" ));
+        
+        if(isNaN(num) && isNaN(num2))
+        {
+            throw "No se pueden escribir palabras, SOLO NUMEROS"
+        }
+        alert('La suma de su edad y su numero favorito es'+(num+num2))
+      
+
+    }
+    catch(error)
+    {
+        alert("Error"+ error)
+
+    }
+}

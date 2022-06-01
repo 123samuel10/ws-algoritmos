@@ -320,5 +320,14 @@ body{
     
     
 }
+.error{
+    position: relative;
+    left: 80%;
+    padding: 4px;
+    bottom: 3000px;
+    background-color: black;
+    color: white;
+    
+}
 
 

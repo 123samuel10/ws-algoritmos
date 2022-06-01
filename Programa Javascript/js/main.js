@@ -3,12 +3,14 @@ function boton(){
     document.getElementById('boton-comprar');
 
     let huevos=document.getElementById('huevos-boton').value;
+    
+
     let leche=document.getElementById('leche-boton').value;
+  
     let pan=document.getElementById('pan-boton').value;
+   
     let fruta=document.getElementById('fruta-boton').value;
-    
-    
-    
+  
     if (huevos<=30){
         huevos*=15000;
     }
@@ -21,6 +23,10 @@ function boton(){
     if(fruta<=50){
         fruta*=2000;
     }
+    
+    
+    
+
     
     let resultado=huevos+leche+pan+fruta;
     alert(resultado)
