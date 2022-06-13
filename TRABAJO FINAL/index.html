@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<!-- menu igual al anterior -->
+<nav>
+    <input type="checkbox"  id="check">
+    <label for="check" class="checkboton">
+        <i class="fa-solid fa-bars"></i><!----icono link del navegador-->
+    </label>
+    <a href="#" class="enlace">
+        <img src="../TRABAJO FINAL/imagenes/logo.jpg" alt="" class="logo">
+    </a>
+    <ul>
+        <li><a class="active" href="menuPrincipal.html">INICIO</a></li>
+        <li><a href="misionYvision.html">Vision y Mision</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="index.html">Compras</a></li>
+    </ul>
+
+</nav>
+<section></section>
+
+<h3>GUIA DE PRECIOS:</h3>
+<div class="contenedor2">
+
+    <button class="botonProductosCaros" type="button" onclick="PrecioMayor()">Productos-Caros</button>  
+    <br>
+<textarea class="mostrarProductosCaros" id="mostrarPrecios" cols="50" rows="5"></textarea>       
+<br>
+<button class="botonProductosBaratos" type="button" onclick="precioMenor()">Productos-baratos</button>
+<br>
+<textarea class="mostrarProductosBaratos" id="mostrarPreciosDos" cols="50" rows="5"></textarea>
+</div>
+<div class="contenedorUno">
+
+<!-- contenedor de portatil-gamer -->
+
+    <div id="b1">
+
+        <p>Portatil-Gamer</p>
+        <input class="precios" id="precio1" value="3000000">
+        <img class="imagen1" src="imagenes/imagen1.jpg" >
+
+
+        <input type="text"  id="nombreUno-producto" value="Portatil Gamer" >
+        <input placeholder="ingrese la cantidad" type="number" id="Cantidad-pordutoUno">
+    </div>
+
+    <!-- contenedor de computador de mesa -->
+
+    <div id="b2">
+        <p>Computador de mesa</p>
+        <input class="precios"  id="precio2" value="2500000">
+        <img class="imagen2" src="imagenes/imagen2.jpg">
+
+
+        <input type="text" id="nombreDos-Producto" value="Portatil Mesa">
+        <input placeholder="ingrese la cantidad" type="number2" id="Cantidad-productoDos">
+    </div>
+<!-- contenedor de segundo portatil gamer -->
+    <div id="b3">
+        <p>Portatil-Gamer</p>
+        <input  class="precios"  id="precio3" value="2200000">
+        <img class="imagen3" src="imagenes/imagen3.jpg">
+
+        <input type="text" id="nombreTres-Producto" value="Portatil Gamer de colores">
+        <input placeholder="ingrese la cantidad" type="number" id="Cantidad-productoTres">
+
+    </div>
+    <!--2 fila ----------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- contenedor de celular1 -->
+    <div id="b4">
+        <p>Xiaomi redmi note 10 </p>
+        <input  class="precios"  id="precio4" value="1500000">
+        <img src="imagenes/imagen4.jpg" class="imagen4">
+
+        <input type="text" id="NombreXiaomi" value="Xiaomi">
+        <input  placeholder="ingrese la cantidad" type="number" id="CantidadDeXiaomi">
+
+    </div>
+
+
+    <!--contenedor de celular2  -->
+    <div id="b5">
+        <p>Samsung a10</p>
+        <input class="precios" id="precio5" value="400000">
+        <img src="imagenes/imagen5.jpg" class="imagen5">
+        <input type="text" id="nombreProductoCinco" value="Samsung">
+        <input placeholder="ingrese la cantidad" type="number" id="numeroProductoCinco">
+
+
+    </div>
+
+
+
+    <!-- contenedor de celular 3 -->
+    <div id="b6">
+        <p>Phone 13</p>
+        <input  class="precios"  id="precio6" value="4000000">
+        <img src="imagenes/imagen6.webp" class="imagen6">
+        <input type="text" id="nombreSeis-Producto" value="Phone">
+        <input placeholder="ingrese la cantidad" type="number" id="Cantidad-productoSeis">
+
+
+    </div>
+    <!-- 3 fila----------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- contenedor de lavadora 1 -->
+    <div id="b7">
+        <p>LG lavadora</p>
+        <input  class="precios"  id="precio7" value="1300000">
+        <img src="imagenes/imagen7.webp" class="imagen7">
+        <input type="text" id="nombreSiete-producto" value="LG lavadora">
+        <input placeholder="ingrese la cantidad" type="number" id="Cantidad-pordutoSiete">
+
+    </div>
+    <!-- contenedor de lavadora 2 -->
+    <div id="b8">
+        <p>Lavadora indocul</p>
+        <input  class="precios"  id="precio8" value="700000">
+        <img src="imagenes/imagen8.jpg" class="imagen8">
+        <input type="text" id="nombreOcho-producto" value="Lavadora indocul">
+        <input placeholder="ingrese la cantidad" type="number" id="Cantidad-pordutoOcho">
+
+
+    </div>
+    <!-- contenedor de lavadora 3 -->
+    <div id="b9">
+        <p>Lavadora haceb</p>
+        <input  class="precios"  id="precio9" value="600000">
+        <img src="imagenes/imagen9.jpg" class="imagen9">
+        <input type="text" id="nombreNueve-producto" value="Lavadora haceb">
+        <input placeholder="ingrese la cantidad" type="number" id="Cantidad-productoNueve">
+
+    </div>
+    <!-- contenedor de impresora 1 -->
+    <div id="b10">
+        <p>Impresora Multifuncional</p>
+        <input  class="precios"  id="precio10" value="650000">
+        <img src="imagenes/impresora1.jpg" class="imagen10">
+        <input type="text" id="nombreDiez-producto" value="Impresora Multifuncional">
+        <input placeholder="ingrese la cantidad" type="number" id="Cantidad-productoDiez">
+
+    </div>
+    <!-- contenedor de impresora 2 -->
+    <div id="b11">
+        <p>Impresora</p>
+        <input  class="precios"  id="precio11" value="700000">
+        <img src="imagenes/impresaora2.webp" class="imagen11">
+        <input type="text" id="nombreOnce-producto" value="Impresora">
+        <input placeholder="ingrese la cantidad" type="number" id="Cantidad-productoOnce">
+
+    </div>
+    <!-- contenedor de impresora 3 -->
+    <div id="b12">
+        <p>Impresora Blanca</p>
+        <input  class="precios"  id="precio12" value="620000">
+        <img src="imagenes/impresaora3.webp" class="imagen12">
+        <input type="text" id="nombreDoce-producto" value="Impresora Blanca">
+        <input placeholder="ingrese la cantidad" type="number" id="Cantidad-productoDoce">
+
+    </div>
+    
+</div>
+
+<div class="contenedor-botones">
+<input class="boton-enviar" type="submit" value="enviar" onclick="enviar()">
+<br>
+<input class="boton-vaciar" type="submit" value="Vaciar Compra" class="carrito" id="carrito" onclick="Ccarrito()">
+<br>
+<input class="boton-guardar" type="submit" value="Guardar Data" onclick="Guardar()">
+
+</div>
+
+<div class="contenedor">
+    <table class="table">
+        <!-- <thead class="thead-inverse"> -->
+            <tr>
+                
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                
+            </tr>
+        <!-- </thead> -->
+        <tbody id="table">
+
+        </tbody>
+       
+
+    </table>
+
+</div>
+<div class="contenedor-recibo">
+
+
+<label class="producto-recibo">TOTAL DE PRODUCTOS:</label>
+<br>
+<textarea rows="1" cols="50"  id="totalProductoComprados"></textarea>
+<br>
+<input type="submit" value="calcular" class="boton-calcular"  onclick="calcular()">
+<br>
+<br>
+<br>
+</div>
+
+<div class="localStorage">
+    <label class="infoLocal" >INFORMACION GUARDADA:</label>
+    <textarea  id="listado" rows="10" cols="70"></textarea>
+</div>
+
+<div class="contenedor-DeInformacion">
+    
+
+
+<div class="flex-contenedor1">
+   <strong> <h4 class="subtitulo">BUSCAR PRODUCTO POR NOMBRE:</h4></strong>
+    <label  for="nombreProducto">Nombre: </label>
+    <input   id="nombreProducto" type="text">
+    <button class="boton-info"  type="button" onclick="buscarProducto()">Buscar Producto</button>
+</div>
+<br>
+
+<textarea  class="border2"  id="productoBuscado" rows="1" cols="70" ></textarea>
+<br>
+<br>
+<br>
+<strong><h4 class="subtitulo">AUMENTAR CANTIDAD POR NOMBRE: </h4></strong>
+<label  for="AumentarCantidad">Nombre: </label>
+<input   id="AumentarCantidad" type="text">
+<button class="boton-info"   type="button" onclick="AumentarUno()">Aumentar Cantidad</button>
+<br>
+<br>
+<br>
+<strong><h4>DISMINUIR CANTIDAD POR NOMBRE:</h4></strong>
+<label for="disminuirCantidad">Nombre:</label>
+<input id="disminuir" type="text">
+<button class="boton-info"  type="button" onclick="disminuirCantidad()">Disminuir Cantidad</button>
+
+<br>
+<br>
+<strong><h4>ELIMINAR PRODUCTO POR NOMBRE:</h4></strong>
+<label for="">Nombre:</label>
+<input type="text" id="eliminar">
+<button class="boton-info"  type="button" onclick="eliminarProducto()">Eliminar Producto</button>
+
+</div>
+
+<!-- iconos -->
+<div class="completo-redes">
+
+
+<div class="redes-contenedor">
+    <ul>
+        <li><a href="https://www.facebook.com/samuel.salcedoramirez.3" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="" target="_blank"  class="instagram"><i class="fab fa-instagram"></i></a></li>
+      
+    </ul>
+
+</div>
+
+</div>
+
+
+    <script src="js/main.js" ></script>
+    <script src="js/mainModule.js"></script>
+    <script src="js/mainParte1.js"></script>
+  
+</body>
+</html>
