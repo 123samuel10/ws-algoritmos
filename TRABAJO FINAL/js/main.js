@@ -272,9 +272,23 @@ console.log(productoNumeroCuatro);
         resultadoDoce+=elemeto.precio*cantidad12;
        }
      calcular=  function calcular(){
+    
          let suma=0;
          suma=resultadoUno+resultadoDos+resultadoTres+resultadoCuatro+resultadoCinco+resultadoSeis+resultadoSiete+resultadoOcho+resultadoNueve+resultadoDiez+resultadoOnce+resultadoDoce;
-         document.getElementById('totalProductoComprados').value+=`Señor cliente el total de los producto es ${suma}`
+         document.getElementById('totalProductoComprados').value+=`Señor cliente el total de los productos es ${suma}`
+        
+
+         if(suma>=30000000){
+            bono();
+            descuento=suma-bono;
+            alert(`Hola, cliente se ha ganado un descuento aletaorio de ${bono}\n , Por superar la compra de 30.000.000, 
+            osea que el total de su compra es de ${descuento}` )
+            document.getElementById('totalProductoComprados').value+=` ,Pero el total que debe pagar seria :${descuento}`
+                   
+         }
+    }
+        function bono(){
+            bono=Math.round(Math.random()*60000);
         }
     })
       }

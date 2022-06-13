@@ -117,7 +117,7 @@ h3{
 .botonProductosCaros{
   
     position: relative;
-    left: 14%;
+    left: 8%;
     border-radius: 5px;
     box-shadow: 0 0 5px 5px black;  
 }
@@ -136,7 +136,7 @@ h3{
 }
 .mostrarProductosBaratos{
     position: relative;
-    right: 14%;
+    right: 5%;
     box-shadow: 0 0 5px 5px rgb(230, 238, 242);
   
 }
