@@ -76,24 +76,6 @@ baseDedato=[
     ]
 let array=[]
 function enviar(){
-//      localStorage.setItem("baseDedato",JSON.stringify(baseDedato));
-//     // localStorage.clear()
-
- 
-//   const mostrarLocal=JSON.parse(localStorage.getItem('baseDedato'))
-//     console.log(mostrarLocal);
-//     mostrarLocal.push("febrero")
-//     console.log(mostrarLocal)
-
-//     localStorage.setItem('baseDedato',JSON.stringify(mostrarLocal));
-//     localStorage.clear()
-
-//     let salida="";
-//     baseDedato.forEach(elemen=>{
-//         salida+=`Nombre: ${elemen.nombre}-Precio:${elemen.precio}- Cantidad: ${elemen.cuantos} \n`
-//         document.getElementById('listado').value=salida
-//          } )
-
     //portatil gamer uno
     let producto1=document.getElementById('nombreUno-producto').value;
     let cantidad1=document.getElementById('Cantidad-pordutoUno').value;

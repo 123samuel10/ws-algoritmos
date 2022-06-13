@@ -116,3 +116,52 @@ section{
 
     }
 }
+
+/* iconos */
+:root{
+    --facebook:#3b5999;
+    --instagram:#e4405f;
+}
+.redes-contenedor{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+.redes-contenedor ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.redes-contenedor ul li a{
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+.redes-contenedor ul:hover a{
+    filter: blur(2px);
+ }
+ .redes-contenedor ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .2);
+    filter: none;
+ }
+ .redes-contenedor ul li .facebook:hover{
+    background: var(--facebook);
+
+ }
+ .redes-contenedor ul li .instagram:hover{
+    background: var(--instagram);
+
+ }
+.completo-redes{
+    background-color: cornflowerblue;
+  
+}
