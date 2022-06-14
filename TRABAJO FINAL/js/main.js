@@ -1,4 +1,15 @@
+const url='https://62a8f566943591102bac34e3.mockapi.io/api/v1/'
 
+const getInfo=async(objeto)=>{ //async devuelve una promesa
+    const answer= await fetch(url+objeto);
+    return answer.json();
+}
+let productos = []
+async function getUsers(){
+    productos=await getInfo("Productos");
+    console.log(productos)
+}
+getUsers()
 baseDedato=[
         {
         id:1,
@@ -74,7 +85,6 @@ baseDedato=[
         cuantos:0,   
         }
     ]
-let array=[]
 function enviar(){
     //portatil gamer uno
     let producto1=document.getElementById('nombreUno-producto').value;
@@ -124,7 +134,6 @@ function enviar(){
     let producto12=document.getElementById('nombreDoce-producto').value;
     let cantidad12=document.getElementById('Cantidad-productoDoce').value;
     let precio12=document.getElementById('precio12').value
-    
 
     //funcion para mostrar por pantalla    
     capturar= function capturar(producto1,cantidad1,precio1,producto2,cantidad2,precio2,producto3,cantidad3,precio3,productoNumeroCuatro,cantidadNumeroCuatro,precio4,producto5,cantidad5,precio5,producto6,
@@ -182,18 +191,7 @@ nuevo=new capturar(producto1,cantidad1,precio1,producto2,cantidad2,precio2,produ
 console.log(nuevo)//trasnformamos en objto     //muestra
 agregar(); //con esta funcion añadimos ese objeto a un array (el procedimiento esta abajo  )                        //muestra
 
-    array.push(cantidad1);//guarda la cantidad de portatil gamer
-    array.push(cantidad2)//guarda la cantidad de computador de mesa
-    array.push(cantidad3)//guarda la cantidad de portatil gamer 2
-    array.push(cantidadNumeroCuatro)//guarda la cantidad de celulares xiaomi
-    array.push(cantidad5)//guarda la cantidad de celulares sansung
-    array.push(cantidad6)//guardamos la cantidad de celulares phone
-    array.push(cantidad7)//guardamos la cantidad de lavadoras lg
-    array.push(cantidad8)//guardamos la cantidad de lavadora indocul
-    array.push(cantidad9)//guardamos la cantidad de lavadora haceb
-    array.push(cantidad10)
-    array.push(cantidad11)
-    array.push(cantidad12)
+ 
 
 let resultadoUno=0;
 let resultadoDos=0;
@@ -295,8 +293,6 @@ function agregar(){
 
 
 }
-
-
 //funciones donde te muestran los productos mas caros y los mas baratos
  function PrecioMayor(){
     baseDedato.forEach(element=>{
@@ -305,7 +301,6 @@ function agregar(){
         }    
      })
     }
-
  function precioMenor(){
     baseDedato.forEach(element=>{
         if(element.precio<=1500000){
@@ -313,8 +308,6 @@ function agregar(){
         }
     })
 }
-
-
 function Ccarrito(){
     window.location.reload();
 }
