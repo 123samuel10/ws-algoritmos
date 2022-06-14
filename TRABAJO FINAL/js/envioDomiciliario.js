@@ -1,6 +1,8 @@
 function encargar(){
-    alert('Se ha guardado los productos encargados. Aproximadamente le llegara a su hogar una semana')
+    alert(`Señor/a aproximadamente sus produtos llegaran en una semana\n`+
+     `Cualquier informacion se la estaremos enviando a su correo.`)
 }
+
 
 let usuario=document.getElementById('nombre');
 usuario.addEventListener('keydown',function(e){
@@ -15,7 +17,7 @@ let mail=document.getElementById('email').value;
 console.log('Correo:'+mail)
 })
 
-let contraseña=document.querySelector('form')
+let contraseña=document.querySelector('form');
 contraseña.addEventListener('submit',function(e){
     e.preventDefault();
 let mostrarContraseña=document.getElementById('Password').value;
