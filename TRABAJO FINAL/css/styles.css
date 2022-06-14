@@ -520,3 +520,27 @@ p{
     background-color: cornflowerblue;
     margin-top: 30px;
 }
+.contenedor-domicilio{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  
+}
+.domicilio{
+    padding: 20px;
+    border-radius: 5px;
+    border: solid darkblue 3px;
+    text-decoration: none;
+    color: #333;
+    background-color: black; 
+  
+}
+.domicilio:hover{
+    background-color: #3b5999;
+}
+.domicilio a{
+    text-decoration: none;
+    color: white;
+}
