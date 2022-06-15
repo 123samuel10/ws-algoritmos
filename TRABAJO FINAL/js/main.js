@@ -290,8 +290,6 @@ function agregar(){
     document.getElementById('table').innerHTML+='<td>'+nuevo.producto10+'</td><td>'+nuevo.cantidad10+ '</td>><td>'+nuevo.precio10+ '</td>'
     document.getElementById('table').innerHTML+='<td>'+nuevo.producto11+'</td><td>'+nuevo.cantidad11+ '</td>><td>'+nuevo.precio11+'</td>'
     document.getElementById('table').innerHTML+='<td>'+nuevo.producto12+'</td><td>'+nuevo.cantidad12+ '</td>><td>'+nuevo.precio12+'</td>'
-
-
 }
 //funciones donde te muestran los productos mas caros y los mas baratos
  function PrecioMayor(){
@@ -301,6 +299,7 @@ function agregar(){
         }    
      })
     }
+
  function precioMenor(){
     baseDedato.forEach(element=>{
         if(element.precio<=1500000){
