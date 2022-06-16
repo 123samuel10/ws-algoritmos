@@ -6,7 +6,9 @@ export function totalizarCompra(valores){
     console.log(valores);
     valores.forEach(element => {
         suma+=element
+       
     });
     console.log(suma);
     return `Señor cliente el total de los productos es ${suma}`
+    
 }

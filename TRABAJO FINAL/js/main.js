@@ -1,7 +1,7 @@
 import { totalizarCompra } from './mainModule.js'
 
 
-console.log("Entreeeee JS");
+// console.log("Entreeeee JS");
 
 
 const url = 'https://62a8f566943591102bac34e3.mockapi.io/api/v1/'
@@ -10,6 +10,11 @@ const getInfo = async (objeto) => { //async devuelve una promesa
     const answer = await fetch(url + objeto);
     return answer.json();
 }
+async function getUsers() {
+    productos = await getInfo("Productos");
+    console.log(productos)
+}
+getUsers()
 let nuevo
 let productos = []
 let resultadoUno = 0;
@@ -25,12 +30,6 @@ let resultadoDiez = 0;
 let resultadoOnce = 0;
 let resultadoDoce = 0;
 
-
-async function getUsers() {
-    productos = await getInfo("Productos");
-    console.log(productos)
-}
-getUsers()
 const baseDedato = [
     {
         id: 1,
@@ -267,19 +266,8 @@ document.getElementById("calcular").onclick = function() {
     suma = totalizarCompra([resultadoUno, resultadoDos, resultadoTres, resultadoCuatro, resultadoCinco, resultadoSeis, resultadoSiete, resultadoOcho, resultadoNueve, resultadoDiez, resultadoOnce, resultadoDoce])
     document.getElementById('totalProductoComprados').value += `Señor cliente el total de los productos es ${suma}`
 
-
-    if (suma >= 30000000) {
-        bono();
-        descuento = suma - bono;
-        alert(`Hola, cliente se ha ganado un descuento aletaorio de ${bono}\n , Por superar la compra de 30.000.000, 
-    osea que el total de su compra es de ${descuento}`)
-        document.getElementById('totalProductoComprados').value += ` ,Pero el total que debe pagar seria :${descuento}`
-
-    }
 }
-function bono() {
-    bono = Math.round(Math.random() * 60000);
-}
+
 //muestra(parte 2)//añade el objeto a un arreglo y lo muestra (hacemos eso para que se me vaya guardando la informacion que dijite el usuario)
 var base = [];
 function agregar() {
@@ -302,7 +290,7 @@ function agregar() {
 //funciones donde te muestran los productos mas caros y los mas baratos
 document.getElementById("precioMayor").onclick =function() {
     baseDedato.forEach(element => {
-        if (element.precio >= 2200000) { 
+        if (element.precio >= 2200000) {
             document.getElementById('mostrarPrecios').value += ` ${element.nombre} - ${element.precio} \n `
         }
     })
