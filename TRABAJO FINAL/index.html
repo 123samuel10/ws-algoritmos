@@ -32,11 +32,11 @@
 <h3>GUIA DE PRECIOS:</h3>
 <div class="contenedor2">
 
-    <button class="botonProductosCaros" type="button" onclick="PrecioMayor()">Productos-Caros</button>  
+    <button class="botonProductosCaros" type="button" id="precioMayor">Productos-Caros</button>  
     <br>
 <textarea class="mostrarProductosCaros" id="mostrarPrecios" cols="50" rows="5"></textarea>       
 <br>
-<button class="botonProductosBaratos" type="button" onclick="precioMenor()">Productos-baratos</button>
+<button class="botonProductosBaratos" type="button" id="precioMenor">Productos-baratos</button>
 <br>
 <textarea class="mostrarProductosBaratos" id="mostrarPreciosDos" cols="50" rows="5"></textarea>
 </div>
@@ -172,9 +172,9 @@
 </div>
 
 <div class="contenedor-botones">
-<input class="boton-enviar" type="submit" value="Enviar" onclick="enviar()">
+<button class="boton-enviar" type="button" id="enviar" >Enviar</button>
 <br>
-<input class="boton-vaciar" type="submit" value="Vaciar Compra" class="carrito" id="carrito" onclick="Ccarrito()">
+<button class="boton-vaciar" type="button"  id="vaciarCompra" class="carrito" > Vaciar Compra </button>
 <br>
 <input class="boton-guardar" type="submit" value="Guardar Data" onclick="Guardar()">
 
@@ -206,7 +206,7 @@
 <br>
 <textarea rows="1" cols="50"  id="totalProductoComprados"></textarea>
 <br>
-<input type="submit" value="calcular" class="boton-calcular"  onclick="calcular()">
+<button type="button" id="calcular" class="boton-calcular"> Calcular </button>
 <br>
 <br>
 <br>
@@ -273,8 +273,7 @@
 
 
 
-    <script src="js/main.js" type="module" ></script>
-    <script src="js/mainModule.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
     <script src="js/mainParte1.js"></script>
   
 </body>

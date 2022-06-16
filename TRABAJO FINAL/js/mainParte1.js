@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {//ponemos el evento D
     
 
     localStorage.clear()// con esto limpiamos el localStorage
-//con la funcion agregar al inicio, como lo dice su nombre guardamos en el arreglo lo que dijite el usuario y se agregara en la zona principal mediante el unshift(metodo el arreglo)
+// como lo dice su nombre guardamos en el arreglo lo que dijite el usuario y se agregara en la zona principal mediante el unshift(metodo el arreglo)
 Guardar= function guardar() {
     infoProductos.unshift([document.getElementById("nombreUno-producto").value,document.getElementById("precio1").value,document.getElementById("Cantidad-pordutoUno").value])
     infoProductos.push([document.getElementById("nombreDos-Producto").value,document.getElementById("precio2").value,document.getElementById("Cantidad-productoDos").value])
