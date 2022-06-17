@@ -106,7 +106,7 @@ const baseDedato = [
     }
 ]
 document.getElementById("enviar").onclick = function enviar() {
-    console.log("Entreeeee");
+    
     //portatil gamer uno
     let producto1 = document.getElementById('nombreUno-producto').value;
     let cantidad1 = document.getElementById('Cantidad-pordutoUno').value;
@@ -209,7 +209,7 @@ document.getElementById("enviar").onclick = function enviar() {
     }
     nuevo = new capturar(producto1, cantidad1, precio1, producto2, cantidad2, precio2, producto3, cantidad3, precio3, productoNumeroCuatro, cantidadNumeroCuatro, precio4, producto5, cantidad5, precio5, producto6, cantidad6, precio6, producto7, cantidad7, precio7,
         producto8, cantidad8, precio8, producto9, cantidad9, precio9, producto10, cantidad10, precio10, producto11, cantidad11, precio11, producto12, cantidad12, precio12); //muestra
-    console.log(nuevo)//trasnformamos en objto     //muestra
+   //trasnformamos en objto     //muestra
     agregar(); //con esta funcion añadimos ese objeto a un array (el procedimiento esta abajo  )                        //muestra
 
 
