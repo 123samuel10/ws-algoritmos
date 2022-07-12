@@ -4,17 +4,7 @@ import { totalizarCompra } from './mainModule.js'
 console.log("Entreeeee JS");
 
 
-const url = 'https://62a8f566943591102bac34e3.mockapi.io/api/v1/'
 
-const getInfo = async (objeto) => { //async devuelve una promesa
-    const answer = await fetch(url + objeto);
-    return answer.json();
-}
-async function getUsers() {
-    productos = await getInfo("Productos");
-    console.log(productos)
-}
-getUsers()
 let nuevo
 let productos = []
 let resultadoUno = 0;
