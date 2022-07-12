@@ -1,7 +1,7 @@
 import { totalizarCompra } from './mainModule.js'
 
 
-// console.log("Entreeeee JS");
+console.log("Entreeeee JS");
 
 
 const url = 'https://62a8f566943591102bac34e3.mockapi.io/api/v1/'
@@ -105,6 +105,10 @@ const baseDedato = [
         cuantos: 0,
     }
 ]
+
+let guardarInfo=baseDedato.filter(element=>element.precio>=700000)
+console.log(guardarInfo);
+
 document.getElementById("enviar").onclick = function enviar() {
     
     //portatil gamer uno
